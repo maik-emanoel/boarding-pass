@@ -18,8 +18,9 @@
 
 body {
     min-height: 100vh;
-    background: var(--bg-color);
+    overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
+    background: var(--bg-color) no-repeat center;
 
     display: grid;
     place-items: center;
@@ -209,5 +210,20 @@ h1 {
 
     #boarding-info {
         padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 380px) {
+    #app {
+        padding-inline: 2rem;
+    }
+
+    #flight-info,
+    #boarding-info {
+        padding-inline: 24px;
+    }
+
+    #passenger-info .container{
+        padding-inline: 24px;
     }
 }
